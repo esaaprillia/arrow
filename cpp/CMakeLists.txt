@@ -540,7 +540,6 @@ set(CMAKE_CXX_FLAGS "${CXX_ONLY_FLAGS} ${CMAKE_CXX_FLAGS}")
 if(ARROW_FUZZING)
   set(ARROW_USE_COVERAGE ON)
 endif()
-include(san-config)
 
 # Code coverage
 if("${ARROW_GENERATE_COVERAGE}")
