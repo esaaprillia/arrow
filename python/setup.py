@@ -341,13 +341,11 @@ class build_ext(_build_ext):
             print("-- Finished cmake for PyArrow")
 
             print("-- Running cmake --build for PyArrow")
-            self.spawn(['cmake', '--build', '.', '--config', self.build_type] +
-                       build_tool_args)
+
             print("-- Finished cmake --build for PyArrow")
 
             print("-- Running cmake --build --target install for PyArrow")
-            self.spawn(['cmake', '--build', '.', '--config', self.build_type] +
-                       ['--target', 'install'] + build_tool_args)
+
             print("-- Finished cmake --build --target install for PyArrow")
 
             self._found_names = []
