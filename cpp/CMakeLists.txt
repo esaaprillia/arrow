@@ -545,7 +545,6 @@ include(ThirdpartyToolchain)
 if(ARROW_FUZZING)
   set(ARROW_USE_COVERAGE ON)
 endif()
-include(san-config)
 
 # Code coverage
 if("${ARROW_GENERATE_COVERAGE}")
